@@ -1,0 +1,12 @@
+Descrição de cada função:
+calcularTotal() Multiplica Valor 01 por Valor 02. Exemplo: preço × quantidade.
+
+desconto() Aplica desconto percentual com base no Valor 02. Fórmula esperada: desconto = (valor01 * valor02) / 100 total = valor01 – desconto
+
+juros() Aplica acréscimo percentual com base no Valor 02. Fórmula esperada: acrescimo = (valor01 * valor02) / 100 total = valor01 + acréscimo
+
+comissao() Calcula a comissão com base percentual utilizando o Valor 02 como taxa aplicada sobre o Valor 01.
+
+lucro() Calcula o lucro da operação. Fórmula esperada: lucro = valor01 - valor02 (Valor 01 representa o preço de venda e Valor 02 representa o custo.)
+
+limpar() Deve limpar os campos, esconder a área de resultado e devolver o foco ao primeiro input.
