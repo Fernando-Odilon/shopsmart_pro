@@ -13,7 +13,9 @@ function calcularTotal(){
     else {
         resultado.style.display = 'flex';
         resultado.innerHTML = `
-        O resultado total da compra de ${v2} unidade(s) por R$ ${v1} é R$ ${v1 * v2}.
+        <h2>Total Calculado:</h2>
+        <p>Você está adiquirindo ${v2} unidades com valor unitário de R$ ${v1}</p>
+        <h1>Valor total da compra: <span>R$ ${v1 * v2}</span></h1>
         `;
     };
 };
@@ -28,7 +30,9 @@ function desconto(){
     else {
         resultado.style.display = 'flex';
         resultado.innerHTML = `
-        O desconto de ${v2}% em R$ ${v1} que deve ser recebido é de R$ ${(v1 * v2) / 100}.
+        <h2>Desconto Calculado:</h2>
+        <p>Foi aplicado um desconto de ${v2}% sobre o valor de ${v1}</p>
+        <h1>Valor final com desconto: <span>R$ ${v1 - ((v1 * v2) /100)}</span></h1>
         `;
     };
 };
@@ -43,7 +47,9 @@ function juros(){
     else {
         resultado.style.display = 'flex';
         resultado.innerHTML = `
-        O acréscimo de ${v2}% em R$ ${v1} que deve ser recebido resulta em R$ ${((v1 * v2) / 100) + v1} ao todo.
+        <h2>Juros Calculado:</h2>
+        <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de ${v1}</p>
+        <h1>Valor final com juros: <span>R$ ${((v1 * v2) / 100) + v1}</span></h1>
         `;
     };
 };
@@ -58,7 +64,9 @@ function comissao(){
     else {
         resultado.style.display = 'flex';
         resultado.innerHTML = `
-        A comissão de ${v2}% em R$ ${v1} que deve ser recebido resulta em R$ ${(v1 * v2) / 100}.
+        <h2>Comissão Calculada:</h2>
+        <p>Comissão de ${v2} sobre uma venda de ${v1}</p>
+        <h1>Valor de comissão: <span>R$ ${(v1 * v2) / 100}</span></h1>
         `;
     };  
 };
@@ -73,7 +81,9 @@ function lucro(){
     else {
         resultado.style.display = 'flex';
         resultado.innerHTML = `
-        Para um produto de valor R$ ${v1} e um custo de ${v2}, você deve receber R$ ${v1 - v2} de lucro.
+        <h2>Lucro Calculado:</h2>
+        <p>Preço de venda: R$ ${v1} | Custo: R$ ${v1}</p>
+        <h1>Resultado financeiro: <span>R$ ${v1 - v2}</span></h1>
         `;
     };  
 };
