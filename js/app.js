@@ -37,7 +37,7 @@ function desconto(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Desconto Calculado:</h2>
-        <p>Foi aplicado um desconto de ${v2}% sobre o valor de ${v1.toFixed(2)}</p>
+        <p>Foi aplicado um desconto de ${v2}% sobre o valor de R$ ${v1.toFixed(2)}</p>
         <h1>Valor final com desconto: <span>R$ ${(v1 - ((v1 * v2) /100)).toFixed(2)}</span></h1>
         `;
     };
@@ -57,7 +57,7 @@ function juros(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Juros Calculado:</h2>
-        <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de ${v1.toFixed(2)}</p>
+        <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de R$ ${v1.toFixed(2)}</p>
         <h1>Valor final com juros: <span>R$ ${(((v1 * v2) / 100) + v1).toFixed(2)}</span></h1>
         `;
     };
@@ -77,7 +77,7 @@ function comissao(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Comissão Calculada:</h2>
-        <p>Comissão de ${v2}% sobre uma venda de ${v1.toFixed(2)}</p>
+        <p>Comissão de ${v2}% sobre uma venda de R$ ${v1.toFixed(2)}</p>
         <h1>Valor de comissão: <span>R$ ${((v1 * v2) / 100).toFixed(2)}</span></h1>
         `;
     };  
