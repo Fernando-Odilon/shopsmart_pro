@@ -5,17 +5,17 @@ const input_02 = document.getElementById('valor02');
 
 
 function verificar() {
-    const valor01 = parseFloat(input_01.value); 
-    const valor02 = parseFloat(input_02.value);
+    const v1 = parseFloat(input_01.value); 
+    const v2 = parseFloat(input_02.value);
 
-    if (isNaN(valor01) || isNaN(valor02)){
+    if (isNaN(v1) || isNaN(v2)){
         resultado.style.display = 'flex'
         resultado.innerHTML = `
         <p>Valor 01 ou Valor 02 inválido. Digite um número positivo</p>
         `;
         return;
     }
-    return {valor01, valor02};
+    return {v1, v2};
 };
 
 
