@@ -97,7 +97,7 @@ function lucro(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Lucro Calculado:</h2>
-        <p>Preço de venda: R$ ${v1} | Custo: R$ ${v1}</p>
+        <p>Preço de venda: R$ ${v1} | Custo: R$ ${v2}</p>
         <h1>Resultado financeiro: <span>R$ ${v1 - v2}</span></h1>
         `;
     };  
