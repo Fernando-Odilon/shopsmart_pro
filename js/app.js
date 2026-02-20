@@ -17,8 +17,8 @@ function calcularTotal(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Total Calculado:</h2>
-        <p>Você está adquirindo ${v2} unidades com valor unitário de R$ ${v1}</p>
-        <h1>Valor total da compra: <span>R$ ${v1 * v2}</span></h1>
+        <p>Você está adquirindo ${v2} unidades com valor unitário de R$ ${v1.toFixed(2)}</p>
+        <h1>Valor total da compra: <span>R$ ${(v1 * v2).toFixed(2)}</span></h1>
         `;
     };
 };
@@ -37,8 +37,8 @@ function desconto(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Desconto Calculado:</h2>
-        <p>Foi aplicado um desconto de ${v2}% sobre o valor de ${v1}</p>
-        <h1>Valor final com desconto: <span>R$ ${v1 - ((v1 * v2) /100)}</span></h1>
+        <p>Foi aplicado um desconto de ${v2}% sobre o valor de ${v1.toFixed(2)}</p>
+        <h1>Valor final com desconto: <span>R$ ${(v1 - ((v1 * v2) /100)).toFixed(2)}</span></h1>
         `;
     };
 };
@@ -57,8 +57,8 @@ function juros(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Juros Calculado:</h2>
-        <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de ${v1}</p>
-        <h1>Valor final com juros: <span>R$ ${((v1 * v2) / 100) + v1}</span></h1>
+        <p>Foi aplicado um acréscimo de ${v2}% sobre o valor de ${v1.toFixed(2)}</p>
+        <h1>Valor final com juros: <span>R$ ${(((v1 * v2) / 100) + v1).toFixed(2)}</span></h1>
         `;
     };
 };
@@ -77,8 +77,8 @@ function comissao(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Comissão Calculada:</h2>
-        <p>Comissão de ${v2}% sobre uma venda de ${v1}</p>
-        <h1>Valor de comissão: <span>R$ ${(v1 * v2) / 100}</span></h1>
+        <p>Comissão de ${v2}% sobre uma venda de ${v1.toFixed(2)}</p>
+        <h1>Valor de comissão: <span>R$ ${((v1 * v2) / 100).toFixed(2)}</span></h1>
         `;
     };  
 };
@@ -97,8 +97,8 @@ function lucro(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Lucro Calculado:</h2>
-        <p>Preço de venda: R$ ${v1} | Custo: R$ ${v2}</p>
-        <h1>Resultado financeiro: <span>R$ ${v1 - v2}</span></h1>
+        <p>Preço de venda: R$ ${v1.toFixed(2)} | Custo: R$ ${v2.toFixed(2)}</p>
+        <h1>Resultado financeiro: <span>R$ ${(v1 - v2).toFixed(2)}</span></h1>
         `;
     };  
 };
