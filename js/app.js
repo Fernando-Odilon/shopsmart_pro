@@ -77,7 +77,7 @@ function comissao(){
         resultado.style.display = 'flex';
         resultado.innerHTML = `
         <h2>Comissão Calculada:</h2>
-        <p>Comissão de ${v2} sobre uma venda de ${v1}</p>
+        <p>Comissão de ${v2}% sobre uma venda de ${v1}</p>
         <h1>Valor de comissão: <span>R$ ${(v1 * v2) / 100}</span></h1>
         `;
     };  
