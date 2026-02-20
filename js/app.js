@@ -4,11 +4,14 @@ const input_01 = document.getElementById('valor01');
 const input_02 = document.getElementById('valor02');
 
 function calcularTotal(){
-    const v1 = parseFloat(input_01.value);
+    const v1 = parseFloat(input_01.value); 
     const v2 = parseFloat(input_02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Valor 01 ou Valor 02 inválido. Digite um número');
+        resultado.style.display = 'flex'
+        resultado.innerHTML = `
+        <p>Valor 01 ou Valor 02 inválido. Digite um número positivo</p>
+        `;
     }
     else {
         resultado.style.display = 'flex';
@@ -25,7 +28,10 @@ function desconto(){
     const v2 = parseFloat(input_02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Valor 01 ou Valor 02 inválido. Digite um número')
+        resultado.style.display = 'flex'
+        resultado.innerHTML = `
+        <p>Valor 01 ou Valor 02 inválido. Digite um número positivo</p>
+        `;
     }
     else {
         resultado.style.display = 'flex';
@@ -42,7 +48,10 @@ function juros(){
     const v2 = parseFloat(input_02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Valor 01 ou Valor 02 inválido. Digite um número');
+        resultado.style.display = 'flex'
+        resultado.innerHTML = `
+        <p>Valor 01 ou Valor 02 inválido. Digite um número positivo</p>
+        `;
     }
     else {
         resultado.style.display = 'flex';
@@ -59,7 +68,10 @@ function comissao(){
     const v2 = parseFloat(input_02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Valor 01 ou Valor 02 inválido. Digite um número');
+        resultado.style.display = 'flex'
+        resultado.innerHTML = `
+        <p>Valor 01 ou Valor 02 inválido. Digite um número positivo</p>
+        `;
     }
     else {
         resultado.style.display = 'flex';
@@ -76,7 +88,10 @@ function lucro(){
     const v2 = parseFloat(input_02.value);
 
     if (isNaN(v1) || isNaN(v2)){
-        alert('Valor 01 ou Valor 02 inválido. Digite um número');
+        resultado.style.display = 'flex'
+        resultado.innerHTML = `
+        <p>Valor 01 ou Valor 02 inválido. Digite um número positivo</p>
+        `;
     }
     else {
         resultado.style.display = 'flex';
